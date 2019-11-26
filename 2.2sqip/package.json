@@ -1,0 +1,6 @@
+{
+  "name": "sqip",
+  "dependencies": {
+    "lqip": "0.3.3"
+  }
+}

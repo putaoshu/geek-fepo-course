@@ -1,0 +1,6 @@
+{
+  "name": "pngquant",
+  "dependencies": {
+    "jdf-png-native": "1.1.0"
+  }
+}

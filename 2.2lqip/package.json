@@ -1,0 +1,6 @@
+{
+  "name": "lqip",
+  "dependencies": {
+    "lqip": "2.1.0"
+  }
+}
