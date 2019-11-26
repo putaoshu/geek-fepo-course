@@ -1,2 +1,5 @@
-# geek-fepo-example
-前端性能优化示例（Front-end performance optimization example）
+# geek-fepo-course
+
+极客时间《前端全链路性能优化实战》视频课程PPT和实例源码
+
+注fepo：（Front-end performance optimization）
