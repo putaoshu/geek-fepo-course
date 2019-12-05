@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>CSS</title>
+<script type="text/javascript">
+	console.log(new Date().getTime()+'@1');
+</script>
+</head>
+<body>
+<h1 id="h1">I'm h1</h1>
+<script type="text/javascript">
+	setTimeout(function(){
+		console.log(new Date().getTime()+'@2');
+		//Chrome Developer Tools==>Performance
+
+		document.getElementById('h1').style.textIndent = '999999em';
+		//Paint 42 μs
+		//Composite Layers  1600μs
+
+		//********VS********//
+
+		// document.getElementById('h1').style.color = 'red';
+		//Paint 60 μs
+		//Composite Layers  83 μs
+
+		setTimeout(function(){
+			console.log(new Date().getTime()+'@3');
+			document.getElementById('h1').style.color = 'green';
+		},2000);
+	},2000);
+</script>
+</body>
+</html>
