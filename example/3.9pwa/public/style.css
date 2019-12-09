@@ -1,0 +1,13 @@
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#sw-status {
+  background-color: #54fb0f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

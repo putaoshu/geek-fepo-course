@@ -1,0 +1,16 @@
+.header {
+  /*position: fixed;
+  top: 0px;*/
+  width: 100%;
+  background-color: #F0F8FF;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.header a{
+  color: #61dafb;
+}
+
+.header .todo{
+  color: #999;
+}

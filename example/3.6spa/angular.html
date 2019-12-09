@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Angular</title>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="siteCtrl"> 
+<ul>
+  <li ng-repeat="x in names">
+    {{ x.Name + ', ' + x.Country }}
+  </li>
+</ul>
+</div>
+
+<script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.min.js"></script>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('siteCtrl', function($scope, $http) {
+  $http.get("https://api.myjson.com/bins/nu2ze")
+  .then(function (response) {$scope.names = response.data.sites;});
+});
+</script>

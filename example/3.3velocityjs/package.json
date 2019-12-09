@@ -1,0 +1,6 @@
+{
+  "name": "velocityjs",
+  "dependencies": {
+    "velocityjs": "2.0.0"
+  }
+}
