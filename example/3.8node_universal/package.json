@@ -29,7 +29,7 @@
     
     "extract-text-webpack-plugin": "1.0.1",
     "isomorphic-fetch": "2.2.1",
-    "marked": "0.3.5",
+    "marked": "0.7.0",
    
     "request": "2.72.0",
     "scroll-behavior": "0.4.0",
