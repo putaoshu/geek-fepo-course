@@ -14,7 +14,7 @@ function customerStore(){
     return store.get('customers');
 }
 // exports
-modules.exports = customersFn;  
+module.exports = customersFn;  
 
 
 /*RequireJS*/
