@@ -3,3 +3,8 @@ npm-debug.log
 package-lock.json
 .idea
 .DS_Store
+
+.gitmodules
+xcuserdata
+*.xcuserdatad
+*.xcuserstate
