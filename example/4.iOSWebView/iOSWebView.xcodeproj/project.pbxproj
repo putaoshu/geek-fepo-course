@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01F6E31D23A0692B00615016 /* WKWebView + HPKReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E30623A0692A00615016 /* WKWebView + HPKReusable.m */; };
+		01F6E31E23A0692B00615016 /* HPKPageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E30723A0692A00615016 /* HPKPageHandler.m */; };
+		01F6E31F23A0692B00615016 /* WKWebView + HPKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E30823A0692A00615016 /* WKWebView + HPKExtension.m */; };
+		01F6E32023A0692B00615016 /* HPKPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E30B23A0692A00615016 /* HPKPageManager.m */; };
+		01F6E32123A0692B00615016 /* HPKWebViewPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E30E23A0692A00615016 /* HPKWebViewPool.m */; };
+		01F6E32223A0692B00615016 /* HPKDefaultWebViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E31023A0692A00615016 /* HPKDefaultWebViewControl.m */; };
+		01F6E32323A0692B00615016 /* _HPKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E31123A0692A00615016 /* _HPKUtils.m */; };
+		01F6E32423A0692B00615016 /* _HPKAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E31223A0692A00615016 /* _HPKAspects.m */; };
+		01F6E32523A0692B00615016 /* HPKCommonViewPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E31423A0692A00615016 /* HPKCommonViewPool.m */; };
+		01F6E32623A0692B00615016 /* HPKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E31523A0692A00615016 /* HPKWebView.m */; };
+		01F6E32723A0692B00615016 /* WKWebView + HPKDelegateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E31823A0692B00615016 /* WKWebView + HPKDelegateExtension.m */; };
+		01F6E32823A0692B00615016 /* HPKScrollProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E31B23A0692B00615016 /* HPKScrollProcessor.m */; };
+		01F6E32923A0692B00615016 /* HPKWebViewExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E31C23A0692B00615016 /* HPKWebViewExtensionDelegate.m */; };
+		01F6E33323A06CE100615016 /* normalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E33223A06CE100615016 /* normalViewController.m */; };
+		01F6E33723A087AD00615016 /* progressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E33623A087AD00615016 /* progressViewController.m */; };
+		01F6E33923A0C2A000615016 /* normalWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E33823A0C2A000615016 /* normalWebViewViewController.m */; };
+		01F6E33D23A0D82500615016 /* myProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E33C23A0D82500615016 /* myProgressViewController.m */; };
+		01F6E34923A138CB00615016 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E34323A138CB00615016 /* WebViewJavascriptBridgeBase.m */; };
+		01F6E34A23A138CB00615016 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E34523A138CB00615016 /* WebViewJavascriptBridge.m */; };
+		01F6E34B23A138CB00615016 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E34623A138CB00615016 /* WKWebViewJavascriptBridge.m */; };
+		01F6E34C23A138CB00615016 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E34823A138CB00615016 /* WebViewJavascriptBridge_JS.m */; };
+		01F6E34E23A1398500615016 /* JSSDKIframeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E34D23A1398500615016 /* JSSDKIframeViewController.m */; };
+		01F6E35123A13A2300615016 /* JSSDKIframe.html in Resources */ = {isa = PBXBuildFile; fileRef = 01F6E35023A13A2300615016 /* JSSDKIframe.html */; };
+		01F6E35523A14A0300615016 /* JSSDKWebKit.html in Resources */ = {isa = PBXBuildFile; fileRef = 01F6E35223A14A0300615016 /* JSSDKWebKit.html */; };
+		01F6E35623A14A0300615016 /* JSSDKWebKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E35423A14A0300615016 /* JSSDKWebKitViewController.m */; };
+		01F6E35A23A2326300615016 /* login.html in Resources */ = {isa = PBXBuildFile; fileRef = 01F6E35823A2326200615016 /* login.html */; };
+		01F6E35B23A2326300615016 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E35923A2326200615016 /* loginViewController.m */; };
+		01F6E35E23A35EED00615016 /* JSSDKSchemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E35D23A35EEC00615016 /* JSSDKSchemeViewController.m */; };
+		01F6E36023A35F4300615016 /* JSSDKScheme.html in Resources */ = {isa = PBXBuildFile; fileRef = 01F6E35F23A35F4300615016 /* JSSDKScheme.html */; };
+		01F6E36223A36A1E00615016 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F6E36123A36A1E00615016 /* UIWebViewController.m */; };
+		9B2D858F1E34AB3A00296E4F /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D858E1E34AB3A00296E4F /* homeViewController.m */; };
+		9B40EF541E49A18500FB8F8F /* navViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B40EF531E49A18500FB8F8F /* navViewController.m */; };
+		9B40EF571E49A23200FB8F8F /* globalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B40EF561E49A23200FB8F8F /* globalViewController.m */; };
+		9BE964901E1F6D3000395412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9648F1E1F6D3000395412 /* main.m */; };
+		9BE964931E1F6D3000395412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE964921E1F6D3000395412 /* AppDelegate.m */; };
+		9BE964961E1F6D3000395412 /* navBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE964951E1F6D3000395412 /* navBarController.m */; };
+		9BE964991E1F6D3000395412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE964971E1F6D3000395412 /* Main.storyboard */; };
+		9BE9649B1E1F6D3000395412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9649A1E1F6D3000395412 /* Assets.xcassets */; };
+		9BE9649E1E1F6D3000395412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9649C1E1F6D3000395412 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01F6E30623A0692A00615016 /* WKWebView + HPKReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView + HPKReusable.m"; sourceTree = "<group>"; };
+		01F6E30723A0692A00615016 /* HPKPageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPKPageHandler.m; sourceTree = "<group>"; };
+		01F6E30823A0692A00615016 /* WKWebView + HPKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView + HPKExtension.m"; sourceTree = "<group>"; };
+		01F6E30923A0692A00615016 /* HPKScrollProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKScrollProcessor.h; sourceTree = "<group>"; };
+		01F6E30A23A0692A00615016 /* _HPKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _HPKUtils.h; sourceTree = "<group>"; };
+		01F6E30B23A0692A00615016 /* HPKPageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPKPageManager.m; sourceTree = "<group>"; };
+		01F6E30C23A0692A00615016 /* HPKCommonViewPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKCommonViewPool.h; sourceTree = "<group>"; };
+		01F6E30D23A0692A00615016 /* _HPKAspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _HPKAspects.h; sourceTree = "<group>"; };
+		01F6E30E23A0692A00615016 /* HPKWebViewPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPKWebViewPool.m; sourceTree = "<group>"; };
+		01F6E30F23A0692A00615016 /* WKWebView + HPKReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView + HPKReusable.h"; sourceTree = "<group>"; };
+		01F6E31023A0692A00615016 /* HPKDefaultWebViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPKDefaultWebViewControl.m; sourceTree = "<group>"; };
+		01F6E31123A0692A00615016 /* _HPKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _HPKUtils.m; sourceTree = "<group>"; };
+		01F6E31223A0692A00615016 /* _HPKAspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _HPKAspects.m; sourceTree = "<group>"; };
+		01F6E31323A0692A00615016 /* HPKWebViewExtensionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKWebViewExtensionDelegate.h; sourceTree = "<group>"; };
+		01F6E31423A0692A00615016 /* HPKCommonViewPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPKCommonViewPool.m; sourceTree = "<group>"; };
+		01F6E31523A0692A00615016 /* HPKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPKWebView.m; sourceTree = "<group>"; };
+		01F6E31623A0692A00615016 /* HPKWebViewPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKWebViewPool.h; sourceTree = "<group>"; };
+		01F6E31723A0692A00615016 /* WKWebView + HPKDelegateExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView + HPKDelegateExtension.h"; sourceTree = "<group>"; };
+		01F6E31823A0692B00615016 /* WKWebView + HPKDelegateExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView + HPKDelegateExtension.m"; sourceTree = "<group>"; };
+		01F6E31923A0692B00615016 /* HPKDefaultWebViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKDefaultWebViewControl.h; sourceTree = "<group>"; };
+		01F6E31A23A0692B00615016 /* WKWebView + HPKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView + HPKExtension.h"; sourceTree = "<group>"; };
+		01F6E31B23A0692B00615016 /* HPKScrollProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPKScrollProcessor.m; sourceTree = "<group>"; };
+		01F6E31C23A0692B00615016 /* HPKWebViewExtensionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPKWebViewExtensionDelegate.m; sourceTree = "<group>"; };
+		01F6E32A23A0694A00615016 /* HPKPageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKPageManager.h; sourceTree = "<group>"; };
+		01F6E32B23A0694A00615016 /* HPKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKWebView.h; sourceTree = "<group>"; };
+		01F6E32C23A0694A00615016 /* HPKViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKViewProtocol.h; sourceTree = "<group>"; };
+		01F6E32D23A0694A00615016 /* HPKControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKControllerProtocol.h; sourceTree = "<group>"; };
+		01F6E32E23A0694A00615016 /* HPKPageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKPageHandler.h; sourceTree = "<group>"; };
+		01F6E32F23A0694A00615016 /* HPKModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPKModelProtocol.h; sourceTree = "<group>"; };
+		01F6E33223A06CE100615016 /* normalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = normalViewController.m; sourceTree = "<group>"; };
+		01F6E33423A06CFA00615016 /* normalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = normalViewController.h; sourceTree = "<group>"; };
+		01F6E33523A0879700615016 /* progressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = progressViewController.h; sourceTree = "<group>"; };
+		01F6E33623A087AD00615016 /* progressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = progressViewController.m; sourceTree = "<group>"; };
+		01F6E33823A0C2A000615016 /* normalWebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = normalWebViewViewController.m; sourceTree = "<group>"; };
+		01F6E33A23A0C2AB00615016 /* normalWebViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = normalWebViewViewController.h; sourceTree = "<group>"; };
+		01F6E33B23A0D81700615016 /* myProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myProgressViewController.h; sourceTree = "<group>"; };
+		01F6E33C23A0D82500615016 /* myProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myProgressViewController.m; sourceTree = "<group>"; };
+		01F6E34123A138CB00615016 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		01F6E34223A138CB00615016 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		01F6E34323A138CB00615016 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		01F6E34423A138CB00615016 /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		01F6E34523A138CB00615016 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		01F6E34623A138CB00615016 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		01F6E34723A138CB00615016 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		01F6E34823A138CB00615016 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		01F6E34D23A1398500615016 /* JSSDKIframeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSSDKIframeViewController.m; sourceTree = "<group>"; };
+		01F6E34F23A1399300615016 /* JSSDKIframeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSSDKIframeViewController.h; sourceTree = "<group>"; };
+		01F6E35023A13A2300615016 /* JSSDKIframe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSSDKIframe.html; sourceTree = "<group>"; };
+		01F6E35223A14A0300615016 /* JSSDKWebKit.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSSDKWebKit.html; sourceTree = "<group>"; };
+		01F6E35323A14A0300615016 /* JSSDKWebKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSDKWebKitViewController.h; sourceTree = "<group>"; };
+		01F6E35423A14A0300615016 /* JSSDKWebKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSDKWebKitViewController.m; sourceTree = "<group>"; };
+		01F6E35723A2326200615016 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		01F6E35823A2326200615016 /* login.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
+		01F6E35923A2326200615016 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		01F6E35C23A35ED400615016 /* JSSDKSchemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSSDKSchemeViewController.h; sourceTree = "<group>"; };
+		01F6E35D23A35EEC00615016 /* JSSDKSchemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSSDKSchemeViewController.m; sourceTree = "<group>"; };
+		01F6E35F23A35F4300615016 /* JSSDKScheme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSSDKScheme.html; sourceTree = "<group>"; };
+		01F6E36123A36A1E00615016 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		01F6E36323A36A2900615016 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		9B2D858D1E34AB3A00296E4F /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = "<group>"; };
+		9B2D858E1E34AB3A00296E4F /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = "<group>"; };
+		9B40EF521E49A18500FB8F8F /* navViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navViewController.h; sourceTree = "<group>"; };
+		9B40EF531E49A18500FB8F8F /* navViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navViewController.m; sourceTree = "<group>"; };
+		9B40EF551E49A23200FB8F8F /* globalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globalViewController.h; sourceTree = "<group>"; };
+		9B40EF561E49A23200FB8F8F /* globalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = globalViewController.m; sourceTree = "<group>"; };
+		9BE9648B1E1F6D3000395412 /* iOSWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE9648F1E1F6D3000395412 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BE964911E1F6D3000395412 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9BE964921E1F6D3000395412 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9BE964941E1F6D3000395412 /* navBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = navBarController.h; sourceTree = "<group>"; };
+		9BE964951E1F6D3000395412 /* navBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = navBarController.m; sourceTree = "<group>"; };
+		9BE964981E1F6D3000395412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BE9649A1E1F6D3000395412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BE9649D1E1F6D3000395412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BE9649F1E1F6D3000395412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BE964881E1F6D3000395412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01F6E30423A068EC00615016 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				01F6E30D23A0692A00615016 /* _HPKAspects.h */,
+				01F6E31223A0692A00615016 /* _HPKAspects.m */,
+				01F6E30A23A0692A00615016 /* _HPKUtils.h */,
+				01F6E31123A0692A00615016 /* _HPKUtils.m */,
+				01F6E30C23A0692A00615016 /* HPKCommonViewPool.h */,
+				01F6E31423A0692A00615016 /* HPKCommonViewPool.m */,
+				01F6E31923A0692B00615016 /* HPKDefaultWebViewControl.h */,
+				01F6E31023A0692A00615016 /* HPKDefaultWebViewControl.m */,
+				01F6E30723A0692A00615016 /* HPKPageHandler.m */,
+				01F6E30B23A0692A00615016 /* HPKPageManager.m */,
+				01F6E30923A0692A00615016 /* HPKScrollProcessor.h */,
+				01F6E31B23A0692B00615016 /* HPKScrollProcessor.m */,
+				01F6E31523A0692A00615016 /* HPKWebView.m */,
+				01F6E31323A0692A00615016 /* HPKWebViewExtensionDelegate.h */,
+				01F6E31C23A0692B00615016 /* HPKWebViewExtensionDelegate.m */,
+				01F6E31623A0692A00615016 /* HPKWebViewPool.h */,
+				01F6E30E23A0692A00615016 /* HPKWebViewPool.m */,
+				01F6E31723A0692A00615016 /* WKWebView + HPKDelegateExtension.h */,
+				01F6E31823A0692B00615016 /* WKWebView + HPKDelegateExtension.m */,
+				01F6E31A23A0692B00615016 /* WKWebView + HPKExtension.h */,
+				01F6E30823A0692A00615016 /* WKWebView + HPKExtension.m */,
+				01F6E30F23A0692A00615016 /* WKWebView + HPKReusable.h */,
+				01F6E30623A0692A00615016 /* WKWebView + HPKReusable.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		01F6E30523A068FF00615016 /* globalWebViewBase */ = {
+			isa = PBXGroup;
+			children = (
+				01F6E30423A068EC00615016 /* Source */,
+				01F6E32D23A0694A00615016 /* HPKControllerProtocol.h */,
+				01F6E32F23A0694A00615016 /* HPKModelProtocol.h */,
+				01F6E32E23A0694A00615016 /* HPKPageHandler.h */,
+				01F6E32A23A0694A00615016 /* HPKPageManager.h */,
+				01F6E32C23A0694A00615016 /* HPKViewProtocol.h */,
+				01F6E32B23A0694A00615016 /* HPKWebView.h */,
+			);
+			path = globalWebViewBase;
+			sourceTree = "<group>";
+		};
+		01F6E34023A1387F00615016 /* JSSDKViewControllerBase */ = {
+			isa = PBXGroup;
+			children = (
+				01F6E34423A138CB00615016 /* WebViewJavascriptBridge_JS.h */,
+				01F6E34823A138CB00615016 /* WebViewJavascriptBridge_JS.m */,
+				01F6E34223A138CB00615016 /* WebViewJavascriptBridge.h */,
+				01F6E34523A138CB00615016 /* WebViewJavascriptBridge.m */,
+				01F6E34123A138CB00615016 /* WebViewJavascriptBridgeBase.h */,
+				01F6E34323A138CB00615016 /* WebViewJavascriptBridgeBase.m */,
+				01F6E34723A138CB00615016 /* WKWebViewJavascriptBridge.h */,
+				01F6E34623A138CB00615016 /* WKWebViewJavascriptBridge.m */,
+			);
+			path = JSSDKViewControllerBase;
+			sourceTree = "<group>";
+		};
+		9BE964821E1F6D3000395412 = {
+			isa = PBXGroup;
+			children = (
+				9BE9648D1E1F6D3000395412 /* iOSWebView */,
+				9BE9648C1E1F6D3000395412 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BE9648C1E1F6D3000395412 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BE9648B1E1F6D3000395412 /* iOSWebView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BE9648D1E1F6D3000395412 /* iOSWebView */ = {
+			isa = PBXGroup;
+			children = (
+				01F6E34023A1387F00615016 /* JSSDKViewControllerBase */,
+				01F6E30523A068FF00615016 /* globalWebViewBase */,
+				9BE964911E1F6D3000395412 /* AppDelegate.h */,
+				9BE964921E1F6D3000395412 /* AppDelegate.m */,
+				9B2D858D1E34AB3A00296E4F /* homeViewController.h */,
+				9B2D858E1E34AB3A00296E4F /* homeViewController.m */,
+				9B40EF521E49A18500FB8F8F /* navViewController.h */,
+				9B40EF531E49A18500FB8F8F /* navViewController.m */,
+				01F6E33423A06CFA00615016 /* normalViewController.h */,
+				01F6E33223A06CE100615016 /* normalViewController.m */,
+				01F6E36323A36A2900615016 /* UIWebViewController.h */,
+				01F6E36123A36A1E00615016 /* UIWebViewController.m */,
+				01F6E33A23A0C2AB00615016 /* normalWebViewViewController.h */,
+				01F6E33823A0C2A000615016 /* normalWebViewViewController.m */,
+				9B40EF551E49A23200FB8F8F /* globalViewController.h */,
+				9B40EF561E49A23200FB8F8F /* globalViewController.m */,
+				9BE964941E1F6D3000395412 /* navBarController.h */,
+				9BE964951E1F6D3000395412 /* navBarController.m */,
+				01F6E35823A2326200615016 /* login.html */,
+				01F6E35723A2326200615016 /* loginViewController.h */,
+				01F6E35923A2326200615016 /* loginViewController.m */,
+				01F6E33523A0879700615016 /* progressViewController.h */,
+				01F6E33623A087AD00615016 /* progressViewController.m */,
+				01F6E33B23A0D81700615016 /* myProgressViewController.h */,
+				01F6E33C23A0D82500615016 /* myProgressViewController.m */,
+				01F6E35F23A35F4300615016 /* JSSDKScheme.html */,
+				01F6E35C23A35ED400615016 /* JSSDKSchemeViewController.h */,
+				01F6E35D23A35EEC00615016 /* JSSDKSchemeViewController.m */,
+				01F6E35023A13A2300615016 /* JSSDKIframe.html */,
+				01F6E34F23A1399300615016 /* JSSDKIframeViewController.h */,
+				01F6E34D23A1398500615016 /* JSSDKIframeViewController.m */,
+				01F6E35223A14A0300615016 /* JSSDKWebKit.html */,
+				01F6E35323A14A0300615016 /* JSSDKWebKitViewController.h */,
+				01F6E35423A14A0300615016 /* JSSDKWebKitViewController.m */,
+				9BE9649A1E1F6D3000395412 /* Assets.xcassets */,
+				9BE964971E1F6D3000395412 /* Main.storyboard */,
+				9BE9649C1E1F6D3000395412 /* LaunchScreen.storyboard */,
+				9BE9649F1E1F6D3000395412 /* Info.plist */,
+				9BE9648E1E1F6D3000395412 /* Supporting Files */,
+			);
+			path = iOSWebView;
+			sourceTree = "<group>";
+		};
+		9BE9648E1E1F6D3000395412 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BE9648F1E1F6D3000395412 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BE9648A1E1F6D3000395412 /* iOSWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BE964A21E1F6D3000395412 /* Build configuration list for PBXNativeTarget "iOSWebView" */;
+			buildPhases = (
+				9BE964871E1F6D3000395412 /* Sources */,
+				9BE964881E1F6D3000395412 /* Frameworks */,
+				9BE964891E1F6D3000395412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSWebView;
+			productName = wkWebView;
+			productReference = 9BE9648B1E1F6D3000395412 /* iOSWebView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BE964831E1F6D3000395412 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = putaoshu;
+				TargetAttributes = {
+					9BE9648A1E1F6D3000395412 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = S88UXK9VC7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9BE964861E1F6D3000395412 /* Build configuration list for PBXProject "iOSWebView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BE964821E1F6D3000395412;
+			productRefGroup = 9BE9648C1E1F6D3000395412 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BE9648A1E1F6D3000395412 /* iOSWebView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BE964891E1F6D3000395412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F6E35123A13A2300615016 /* JSSDKIframe.html in Resources */,
+				01F6E36023A35F4300615016 /* JSSDKScheme.html in Resources */,
+				01F6E35A23A2326300615016 /* login.html in Resources */,
+				9BE9649E1E1F6D3000395412 /* LaunchScreen.storyboard in Resources */,
+				9BE9649B1E1F6D3000395412 /* Assets.xcassets in Resources */,
+				9BE964991E1F6D3000395412 /* Main.storyboard in Resources */,
+				01F6E35523A14A0300615016 /* JSSDKWebKit.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BE964871E1F6D3000395412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F6E33723A087AD00615016 /* progressViewController.m in Sources */,
+				01F6E31D23A0692B00615016 /* WKWebView + HPKReusable.m in Sources */,
+				01F6E31E23A0692B00615016 /* HPKPageHandler.m in Sources */,
+				01F6E35623A14A0300615016 /* JSSDKWebKitViewController.m in Sources */,
+				9BE964961E1F6D3000395412 /* navBarController.m in Sources */,
+				01F6E32623A0692B00615016 /* HPKWebView.m in Sources */,
+				01F6E34C23A138CB00615016 /* WebViewJavascriptBridge_JS.m in Sources */,
+				01F6E32423A0692B00615016 /* _HPKAspects.m in Sources */,
+				9BE964931E1F6D3000395412 /* AppDelegate.m in Sources */,
+				9BE964901E1F6D3000395412 /* main.m in Sources */,
+				01F6E32823A0692B00615016 /* HPKScrollProcessor.m in Sources */,
+				01F6E36223A36A1E00615016 /* UIWebViewController.m in Sources */,
+				01F6E33323A06CE100615016 /* normalViewController.m in Sources */,
+				9B40EF571E49A23200FB8F8F /* globalViewController.m in Sources */,
+				01F6E32023A0692B00615016 /* HPKPageManager.m in Sources */,
+				01F6E32723A0692B00615016 /* WKWebView + HPKDelegateExtension.m in Sources */,
+				01F6E32523A0692B00615016 /* HPKCommonViewPool.m in Sources */,
+				01F6E35B23A2326300615016 /* loginViewController.m in Sources */,
+				01F6E32123A0692B00615016 /* HPKWebViewPool.m in Sources */,
+				9B2D858F1E34AB3A00296E4F /* homeViewController.m in Sources */,
+				01F6E34923A138CB00615016 /* WebViewJavascriptBridgeBase.m in Sources */,
+				01F6E34B23A138CB00615016 /* WKWebViewJavascriptBridge.m in Sources */,
+				01F6E33923A0C2A000615016 /* normalWebViewViewController.m in Sources */,
+				9B40EF541E49A18500FB8F8F /* navViewController.m in Sources */,
+				01F6E31F23A0692B00615016 /* WKWebView + HPKExtension.m in Sources */,
+				01F6E34E23A1398500615016 /* JSSDKIframeViewController.m in Sources */,
+				01F6E35E23A35EED00615016 /* JSSDKSchemeViewController.m in Sources */,
+				01F6E33D23A0D82500615016 /* myProgressViewController.m in Sources */,
+				01F6E32923A0692B00615016 /* HPKWebViewExtensionDelegate.m in Sources */,
+				01F6E32223A0692B00615016 /* HPKDefaultWebViewControl.m in Sources */,
+				01F6E32323A0692B00615016 /* _HPKUtils.m in Sources */,
+				01F6E34A23A138CB00615016 /* WebViewJavascriptBridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BE964971E1F6D3000395412 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BE964981E1F6D3000395412 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BE9649C1E1F6D3000395412 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BE9649D1E1F6D3000395412 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BE964A01E1F6D3000395412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BE964A11E1F6D3000395412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BE964A31E1F6D3000395412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S88UXK9VC7;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSWebView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.putaoshu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9BE964A41E1F6D3000395412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S88UXK9VC7;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSWebView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.putaoshu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BE964861E1F6D3000395412 /* Build configuration list for PBXProject "iOSWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE964A01E1F6D3000395412 /* Debug */,
+				9BE964A11E1F6D3000395412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BE964A21E1F6D3000395412 /* Build configuration list for PBXNativeTarget "iOSWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE964A31E1F6D3000395412 /* Debug */,
+				9BE964A41E1F6D3000395412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BE964831E1F6D3000395412 /* Project object */;
+}

@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<style type="text/css">
+    html { font-family:Helvetica; color:#222; }
+    button { margin:10px 15px 10px 0; }
+    .logLine { border-bottom:1px solid #ccc; padding:4px 2px; font-family:courier; }
+    p{}
+</style>
+</head>
+<body>
+<script>
+    //JS执行window.webkit.messageHandlers.Share.postMessage(<messageBody>)
+    function loginClick() {
+        /*
+        if(!document.getElementsByTagName("input")[0].value){
+            alert("请输入username！");
+            return;
+        }*/
+        if (typeof(window.webkit) == 'object'){
+            if (typeof(window.webkit.messageHandlers) == 'object'){
+                window.webkit.messageHandlers.Login.postMessage({
+                    username: document.getElementsByTagName("input")[0].value,
+                    password: document.getElementsByTagName("input")[1].value
+                });
+            }
+        }
+    }
+    
+    //登录回调结果显示
+    function loginResult(username, password) {
+        //alert("username:" + username + "\n password:" + password);
+        document.getElementById("returnValue").innerHTML = "username:" + username + "</br> password:" + password;
+    }
+
+    function cleanClick() {
+        document.getElementById("returnValue").innerHTML = "";
+        document.getElementsByTagName("input")[0].value = "";
+        document.getElementsByTagName("input")[1].value = "";
+    }
+
+    function CheckLoginClick(){
+        if(document.cookie){
+            alert("You has login," + " " +document.cookie);
+        }else{
+            alert("No login, Show login content");
+            document.getElementById('loginContent').style="block"; 
+        }
+    }
+
+    function ChangeUserClick(){
+        document.getElementById('loginContent').style="block"; 
+    }
+
+</script>
+
+<div id="loginContent" style="display:none;">
+    <input type="text" name="username" placeholder="username"  /> 
+    <input type="password" name="password" placeholder="password" /> 
+</div>
+
+<button onclick="CheckLoginClick()" >CheckLogin</button>
+<button onclick="ChangeUserClick()" >ChangeUser</button>
+</br>
+<button onclick="loginClick()" >Login</button>
+
+<div id="returnValue" class="logLine">Login Callback</div>
+
+<!-- <script src="https://m.jr.jd.com/crayfish/zui/vConsole/1.0.0/vConsole.js"></script>
+ -->
+</body>
+</html>

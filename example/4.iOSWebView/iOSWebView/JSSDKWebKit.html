@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<style type="text/css">
+    html { font-family:Helvetica; color:#222; }
+    button { margin:10px 0px 10px;  }
+    .logLine { border-bottom:1px solid #ccc; padding:4px 2px; font-family:courier; }
+    p{}
+</style>
+</head>
+<body>
+<script language="javascript">
+    //JS执行window.webkit.messageHandlers.Share.postMessage(<messageBody>)
+    function shareClick() {
+        window.webkit.messageHandlers.Share.postMessage({
+            title: 'title',
+            content: 'content',
+            url: 'https://www.baidu.com'
+        });
+    }
+    
+    //分享回调结果显示
+    function shareResult(channel_id, share_channel, share_url) {
+        var content = channel_id + ", " + share_channel + ", " + share_url;
+        alert(content);
+        document.getElementById("returnValue").innerHTML = content;
+    }
+    
+    //JS执行window.webkit.messageHandlers.Camera.postMessage(<messageBody>)
+    function cameraClick() {
+        window.webkit.messageHandlers.Camera.postMessage(null);
+    }
+    
+    //调用相册回调结果显示
+    function cameraResult(content) {
+        alert(content);
+        document.getElementById("returnValue").innerHTML = content;
+    }
+</script>
+<button onclick="shareClick()" >分享</button>
+<button onclick="cameraClick()" >相机</button>
+<div id="returnValue" class="logLine">回调显示</div>
+
+</body>
+</html>
